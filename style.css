@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.card-parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  width: calc(15% - 20px);
+  background-color:red;
+  height: 200px;
+}
+
+@media (max-width: 1240px) {
+  .card {
+    width: calc(33% - 20px);
+    background-color: blue;
+  }
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+    background-color: coral;
+  }
+  .container {
+    padding: 0 100px;
+  }
+  body {
+    background-color: purple;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}
